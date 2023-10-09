@@ -2,6 +2,7 @@ body{
   margin: 0;
   height: 100vh;
   font-family: 'Space Mono', monospace;
+  font-weight: 400;
   transition:  background-color .3s, color .3s;
 }
 
@@ -35,4 +36,10 @@ button{
   max-width: 730px;
   margin: 0 auto;
   padding: 0px 20px;
+}
+
+@media(max-width:800px){
+  #root{
+    max-width: 573px;
+  }
 }

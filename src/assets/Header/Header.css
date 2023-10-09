@@ -54,10 +54,11 @@
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("./imgs/icon-search.svg");
+  background-image: url("../imgs/icon-search.svg");
   display: block;
   background-size: cover;
 }
+
 .header__searchbtn{
   right: 10px;
   top: 9.5px;
@@ -69,6 +70,8 @@
   background-color: #0079FF;
   color: #fff;
   border-radius: 10px;
+  z-index: 2;
+  cursor: pointer;
 }
 
 @media (max-width:768px){
