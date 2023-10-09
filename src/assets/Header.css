@@ -1,0 +1,78 @@
+
+.header__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.header__logo{
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__changebtn{
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  height: 20px;
+  letter-spacing: 2.5px;
+  padding: 0px;
+  padding-right: 36px;
+  background-color: transparent;
+  color: #fff;
+  background-image: url("./imgs/icon-sun.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  cursor: pointer;
+}
+
+/* form */ 
+
+.header__form{
+  position: relative;
+}
+
+.header__form #username{
+  font-family: 'Space Mono', monospace;
+  box-sizing: border-box;
+  border: none;
+  min-width: 100%;
+  padding: 22px 0px 22px 80px;
+  border-radius: 15px;
+  background-color: #1E2A47;
+  height: 69px;
+  line-height: 1.388;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.header__form #username::placeholder{
+  color: #fff;
+}
+
+.header__form::before{
+  position: absolute;
+  top: 23px;
+  left: 32px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("./imgs/icon-search.svg");
+  display: block;
+}
+.header__searchbtn{
+  right: 10px;
+  top: 9.5px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  padding: 12px 24px;
+  background-color: #0079FF;
+  color: #fff;
+  border-radius: 10px;
+}
