@@ -129,6 +129,10 @@
   color: inherit
 }
 
+.usercontact__item:first-of-type img{
+  margin-right: 8px;
+}
+
 @media (max-width:800px) {
   .userstats__list{
     grid-column: 1/-1;
