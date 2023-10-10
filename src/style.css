@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  height: 100vh;
+  height: calc(100vh - 144px);
   font-family: 'Space Mono', monospace;
   font-weight: 400;
   transition:  background-color .3s, color .3s;
@@ -41,5 +41,6 @@ button{
 @media(max-width:800px){
   #root{
     max-width: 573px;
+    
   }
 }

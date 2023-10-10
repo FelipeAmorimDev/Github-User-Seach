@@ -5,14 +5,14 @@ import { GlobalContext } from '../GlobalContext'
 import SearchForm from './SearchForm'
 import HeaderTop from './HeaderTop'
 
-const Header = ({setSearch}) => {
+const Header = ({setSearch, error}) => {
 
   const { theme  } = React.useContext(GlobalContext)
 
   return (
     <header className='header__container'>
       <HeaderTop theme={theme} />
-      <SearchForm theme={theme} setSearch={setSearch}/>
+      <SearchForm theme={theme} setSearch={setSearch} error={error}/>
     </header>
   )
 }

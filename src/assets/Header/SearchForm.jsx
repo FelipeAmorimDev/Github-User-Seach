@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchForm = ({ theme, setSearch }) => {
+const SearchForm = ({ theme, setSearch, error }) => {
 
   const [username, setUsername] = React.useState("")
 
@@ -11,7 +11,7 @@ const SearchForm = ({ theme, setSearch }) => {
 
   function handleSearch(e) {
     e.preventDefault();
-    setSearch(username)
+    if(username) setSearch(username)
   }
 
   return (
@@ -25,6 +25,7 @@ const SearchForm = ({ theme, setSearch }) => {
         onChange={(e) => setUsername(e.target.value)}
         style={inputStyle}
       />
+      {error && <span className='search__error'>No results</span>}
       <button className="header__searchbtn">Search</button>
     </form>
   )
