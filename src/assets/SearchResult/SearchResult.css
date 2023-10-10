@@ -69,7 +69,18 @@
     padding: 32px 24px 48px;
     gap: 0px 19px;
   }
+ 
+  .searchresult__userlogo {
+    max-width: 100px;
+    max-height: 100px;
+  }
+ 
+  .searchresult__top {
+    padding: 0px;
+  }
+}
 
+@media (max-width:450px){
   .searchresult__nickname {
     font-size: 16px;
   }
@@ -79,13 +90,84 @@
   .searchresult__id {
     font-size: 13px;
   }
+}
 
-  .searchresult__userlogo {
-    width: 70px;
-    height: 70px;
+/* User stats */
+.userstats__list{
+  border-radius: 10px;
+  padding: 15px 0px 17px 32px;
+  margin-top: 32px;
+  display: flex;
+  grid-column: 2/-1;
+  background-color: #141D2F;
+}
+.userstats__item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.userstats__state{
+  font-size: 13px;
+  color: #fff;
+}
+
+.userstats__value{
+  font-size: 22px;
+  font-style: 700;
+  color: #fff;
+}
+
+.usercontact__list{
+  margin-top: 37px;
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 19px 62px;
+}
+
+.usercontact__item{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+@media (max-width:800px) {
+  .userstats__list{
+    grid-column: 1/-1;
+  }
+  .usercontact__list{
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width:600px) {
+  .usercontact__list{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:450px){
+  .userstats__state{
+    font-size: 11px;
   }
 
-  .searchresult__top {
-    padding: 0px;
+  .userstats__value{
+    font-size: 16px;
+  }
+
+  .userstats__item{
+    gap: 8px;
+  }
+
+  .usercontact__item{
+    font-size: 13px;
+  }
+
+  .userstats__list{
+    padding: 18px 15px 19px;
+    text-align: center;
   }
 }
