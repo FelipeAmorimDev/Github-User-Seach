@@ -1,5 +1,4 @@
 .searchresult__container {
-  background-color: #1E2A47;
   margin-top: 24px;
   border-radius: 15px;
   display: grid;
@@ -10,6 +9,8 @@
 }
 
 .searchresult__userlogo {
+  width: 117px;
+  height: 117px;
   border-radius: 50%;
   grid-row: 1/-1;
 }
@@ -22,7 +23,6 @@
 .searchresult__nickname {
   font-size: 26px;
   font-weight: 700;
-  color: #fff;
 }
 
 .searchresult__id {
@@ -31,7 +31,6 @@
 
 .searchresult__joindate {
   font-size: 15px;
-  color: #FFFFFF;
 }
 
 .searchresult__description {
@@ -39,7 +38,6 @@
   font-size: 15px;
   line-height: 1.666;
   max-width: 56ch;
-  color: #FFFFFF;
   grid-column: 2;
 }
 
@@ -99,7 +97,6 @@
   margin-top: 32px;
   display: flex;
   grid-column: 2/-1;
-  background-color: #141D2F;
 }
 .userstats__item{
   flex: 1;
@@ -109,13 +106,11 @@
 
 .userstats__state{
   font-size: 13px;
-  color: #fff;
 }
 
 .userstats__value{
   font-size: 22px;
   font-style: 700;
-  color: #fff;
 }
 
 .usercontact__list{
@@ -131,7 +126,7 @@
   gap: 16px;
   align-items: center;
   font-size: 15px;
-  color: #fff;
+  color: inherit
 }
 
 @media (max-width:800px) {

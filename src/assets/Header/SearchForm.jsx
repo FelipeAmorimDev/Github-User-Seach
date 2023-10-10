@@ -1,6 +1,9 @@
 import React from 'react';
 
-const SearchForm = ({ theme }) => {
+const SearchForm = ({ theme, setSearch }) => {
+
+  const [username, setUsername] = React.useState("")
+
   const inputStyle = {
     backgroundColor: theme === "dark" ? "#1E2A47" : "#FEFEFE",
     color: theme === "dark" ? "#fff" : "#4B6A9B"
@@ -8,7 +11,7 @@ const SearchForm = ({ theme }) => {
 
   function handleSearch(e) {
     e.preventDefault();
-    console.log("teste")
+    setSearch(username)
   }
 
   return (
@@ -18,6 +21,8 @@ const SearchForm = ({ theme }) => {
         name="username"
         id="username"
         placeholder="Search GitHub username…"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
         style={inputStyle}
       />
       <button className="header__searchbtn">Search</button>
