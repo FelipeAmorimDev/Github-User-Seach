@@ -8,10 +8,11 @@ import { GlobalContext } from '../GlobalContext'
 
 const SearchResult = ({ data }) => {
   const { theme } = useContext(GlobalContext)
+  const containerStyle = { backgroundColor: theme === "dark" ? "#1E2A47" : "#FEFEFE" }
 
   return (
     <main>
-      <section className='searchresult__container' style={{ backgroundColor: theme === "dark" ? "#1E2A47" : "#FEFEFE" }}>
+      <section className='searchresult__container' style={containerStyle}>
         <SearchResultHeader theme={theme} data={data} />
         <UserStats theme={theme} data={data} />
         <UserContact theme={theme} data={data} />
