@@ -3,8 +3,9 @@ import ThemeToggle from './ThemeToggle'
 
 
 const HeaderTop = ({ theme }) => {
-  const logoStyle = { color: theme === "dark" ? "#fff" : "#222731" }
-  
+  const logoColor = theme === "dark" ? "#fff" : "#222731"
+  const logoStyle = { color: logoColor }
+
   return (
     <div className="header__top">
       <a

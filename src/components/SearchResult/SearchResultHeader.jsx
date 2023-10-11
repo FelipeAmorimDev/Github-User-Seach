@@ -1,5 +1,5 @@
 import React from 'react'
-import userLogo from '../imgs/user-img.png'
+
 
 const SearchResultHeader = ({ theme, data }) => {
   return (

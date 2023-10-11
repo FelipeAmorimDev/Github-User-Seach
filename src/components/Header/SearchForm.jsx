@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchForm = ({ theme, setSearch, error }) => {
+const SearchForm = ({ theme, setSearch, error}) => {
 
   const [username, setUsername] = React.useState("")
 
@@ -11,6 +11,7 @@ const SearchForm = ({ theme, setSearch, error }) => {
 
   function handleSearch(e) {
     e.preventDefault();
+    
     if(username) setSearch(username)
   }
 
