@@ -7,6 +7,7 @@ import UserContactItem from './UserContactItem'
 
 
 const UserContact = ({ theme, data }) => {
+  const listStyle = { color: theme === "dark" ? "#fff" : "#4B6A9B" }
   const contactInfos = [
     [iconLocation, "Location City", data.location],
     [iconTwitter, "Twitter User", data.twitter_username],
@@ -17,8 +18,8 @@ const UserContact = ({ theme, data }) => {
   return (
     <ul
       className="usercontact__list"
-      style={{ color: theme === "dark" ? "#fff" : "#4B6A9B" }}>
-      {contactInfos.map(([icon, alt, dataValue]) => <UserContactItem icon={icon} alt={alt} dataValue={dataValue} />)}
+      style={listStyle}>
+      {contactInfos.map(([icon, alt, dataValue]) => <UserContactItem key={alt} icon={icon} alt={alt} dataValue={dataValue} />)}
     </ul>
   )
 }

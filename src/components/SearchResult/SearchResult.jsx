@@ -12,7 +12,7 @@ const SearchResult = ({ data }) => {
 
   return (
     <main>
-      <section className='searchresult__container' style={containerStyle}>
+      <section className='searchresult__container' style={containerStyle} aria-label='Result Search'>
         <SearchResultHeader theme={theme} data={data} />
         <UserStats theme={theme} data={data} />
         <UserContact theme={theme} data={data} />

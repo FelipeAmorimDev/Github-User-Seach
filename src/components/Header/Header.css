@@ -23,7 +23,14 @@
   background-repeat: no-repeat;
   background-position: right;
   cursor: pointer;
+  transition: .3s;
 }
+
+/*Arrumar uma forma para tbm mudar a cor no svg
+.header__changebtn:hover{
+ color: #90A4D4 !important;
+} 
+*/
 
 /* form */ 
 
@@ -55,7 +62,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("../imgs/icon-search.svg");
+  background-image: url("../../assets/icon-search.svg");
   display: block;
   background-size: cover;
 }
@@ -73,6 +80,12 @@
   border-radius: 10px;
   z-index: 2;
   cursor: pointer;
+  transition: .3s;
+}
+
+
+.header__searchbtn:hover{
+  background-color: #60ABFF;
 }
 
 .search__error{

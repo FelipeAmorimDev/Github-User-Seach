@@ -10,7 +10,7 @@ const Header = ({ setSearch, error }) => {
   const { theme } = React.useContext(GlobalContext)
 
   return (
-    <header className='header__container'>
+    <header className='header__container' aria-label='Header App'>
       <HeaderTop theme={theme} />
       <SearchForm theme={theme} setSearch={setSearch} error={error} />
     </header>

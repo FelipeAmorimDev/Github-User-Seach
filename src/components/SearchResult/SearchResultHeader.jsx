@@ -15,7 +15,7 @@ const SearchResultHeader = ({ theme, data }) => {
         </div>
         <span className='searchresult__joindate' style={joinDateStyle}>Joined 25 Jan 2011</span>
       </header>
-      <p className='searchresult__description' style={bioStyle}>{data.bio}</p>
+      <p className='searchresult__description' style={bioStyle}>{data.bio ? data.bio : "This profile has no bio"}</p>
     </>
   )
 }

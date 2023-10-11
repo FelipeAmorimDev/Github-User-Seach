@@ -8,7 +8,7 @@ const HeaderTop = ({ theme }) => {
   return (
     <div className="header__top">
       <a
-        href="#"
+        href=""
         className='header__logo'
         style={logoStyle}>
         devfinder
