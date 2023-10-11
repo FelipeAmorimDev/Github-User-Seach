@@ -5,16 +5,11 @@ import sun from '../../assets/icon-sun.svg'
 
 const ThemeToggle = () => {
   const { theme, handleChangeTheme } = useContext(GlobalContext)
+  
   const btnStyle = {
     backgroundImage: theme === "dark" ? `url(${sun})` : `url(${moon})`,
     color: theme === "dark" ? '#fff' : '#697C9A'
   }
-
-  React.useEffect(() => {
-    const bodyColor = theme === "dark" ? "#141D2F" : "#F6F8FF"
-
-    document.body.style.backgroundColor = bodyColor
-  }, [theme])
 
   return (
     <button
