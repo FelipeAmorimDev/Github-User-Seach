@@ -1,12 +1,23 @@
 import React from 'react'
+import UserStatsItem from './UserStatsItem'
 
 const UserStats = ({ theme, data }) => {
+
+  const userStats = [
+    ["Repos", data.public_repos],
+    ["Followers", data.followers],
+    ["Following", data.following]
+  ]
+
   return (
     <ul
       className="userstats__list"
       style={{ backgroundColor: theme === "dark" ? "#141D2F" : "#F6F8FF" }}
     >
-      <li className='userstats__item'>
+      {userStats.map(([title,value]) => {
+        return <UserStatsItem key={title} title={title} value={value} theme={theme}/>
+      })}
+      {/* <li className='userstats__item'>
         <span
           className='userstats__state'
           style={{ color: theme === "dark" ? "#fff" : "#4B6A9B" }}>
@@ -40,7 +51,7 @@ const UserStats = ({ theme, data }) => {
           style={{ color: theme === "dark" ? "#fff" : "#4B6A9B" }}>
           {data.following}
         </span>
-      </li>
+      </li> */}
     </ul>
   )
 }
